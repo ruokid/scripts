@@ -1,6 +1,8 @@
 #!/bin/sh
-# 此脚本需要aria2服务端配置开启RPC功能
-# aria2.conf add enable-rpc=true
+# 
+# 注意事项
+#   |-需要aria2服务端配置开启RPC功能
+#   |-仅适用于 https://cf.trackerslist.com/all.txt 这种返回格式
 
 # rpc更新配置
 # curl -d '{"jsonrpc":"2.0","method":"aria2.changeGlobalOption","id":"cron","params":["token:'$passwd'",{"seed-time":"0"}]}' http://127.0.0.1:6800/jsonrpc --noproxy '*'
